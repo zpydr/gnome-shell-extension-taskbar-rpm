@@ -40,9 +40,9 @@ cp locale/es/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBa
 cp locale/fr/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/fr/LC_MESSAGES/
 cp locale/zh_CN/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/zh_CN/LC_MESSAGES/
 cp schemas/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/schemas/
-%find_lang TaskBar
+%find_lang TaskBar
 
-%files -f TaskBar.lang
+%files -f TaskBar.lang
 %doc %{_datadir}/gnome-shell/extensions/TaskBar@zpydr/README
 %license %{_datadir}/gnome-shell/extensions/TaskBar@zpydr/LICENSE
 %{_datadir}/gnome-shell/extensions/TaskBar@zpydr/README.md
