@@ -11,7 +11,7 @@ BuildArch:	noarch
 Requires: gnome-shell >= 3.10
 
 %description
-TaskBar is a GNOME Shell Extension, it displays icons of running applications on the top panel.
+TaskBar displays icons of running applications on the top panel.
 
 %prep
 %setup -q
@@ -34,11 +34,11 @@ cp TaskBar.pot %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/
 cp stylesheet.css %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/
 cp README.md %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/
 cp images/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/images/
-cp locale/cs_CZ/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/cs_CZ/LC_MESSAGES/
-cp locale/de/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/de/LC_MESSAGES/
-cp locale/es/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/es/LC_MESSAGES/
-cp locale/fr/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/fr/LC_MESSAGES/
-cp locale/zh_CN/LC_MESSAGES/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/zh_CN/LC_MESSAGES/
+cp locale/cs_CZ/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/cs_CZ/LC_MESSAGES/
+cp locale/de/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/de/LC_MESSAGES/
+cp locale/es/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/es/LC_MESSAGES/
+cp locale/fr/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/fr/LC_MESSAGES/
+cp locale/zh_CN/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/locale/zh_CN/LC_MESSAGES/
 cp schemas/* %{buildroot}%{_datadir}/gnome-shell/extensions/TaskBar@zpydr/schemas/
 %find_lang TaskBar
 
